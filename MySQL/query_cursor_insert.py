@@ -2,10 +2,10 @@
 import mysql.connector
 
 #Conexión
-cnx = mysql.connector.connect(user='lalo', password='2907', host='127.0.0.1', database='codigoIoT')
+cnx = mysql.connector.connect(user='laloremoto', password='2907', host='192.168.100.131', database='codigoIoT')
 
 #Query
-query_insert = ("INSERT INTO rfid (nombre,texto,rfid) VALUES ('Lalo','Prueba Python 2',872589727);")
+query_insert = ("INSERT INTO rfid (nombre,texto,rfid) VALUES ('Lalo','Raspberry Pi 2',128725897278);")
 
 #Petición
 cursor = cnx.cursor()

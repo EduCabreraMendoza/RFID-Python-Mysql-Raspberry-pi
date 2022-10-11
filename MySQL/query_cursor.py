@@ -2,7 +2,7 @@
 import mysql.connector
 
 #Conexión
-cnx = mysql.connector.connect(user='lalo', password='2907', host='127.0.0.1', database='detectorsintomas')
+cnx = mysql.connector.connect(user='laloremoto', password='2907', host='192.168.100.131', database='detectorsintomas')
 
 #Query
 query = ("SELECT id,nombre,temp,bpm,sp02 FROM registro WHERE protodiagnostico='Signos vitales anormales, se le recomienda visitara a un médico';")
