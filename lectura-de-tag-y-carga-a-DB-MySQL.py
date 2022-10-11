@@ -20,7 +20,7 @@ try:
         print("ID: %s\nText: %s" % (id,text))
 
         #Query
-        query_insert = ("INSERT INTO rfid (nombre,texto,rfid) VALUES ('Lalo','"+text+"',"+id+");")
+        query_insert = ("INSERT INTO rfid (nombre,texto,rfid) VALUES ('Lalo','"+text+"',"+str (id)+");")
 
         #Petición
         cursor.execute(query_insert)
