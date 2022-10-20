@@ -26,7 +26,7 @@ try:
     #Lectura del tag
     print("Acerca un tag al lector")
     id, text = reader.read()
-    datos = str.split(",")
+    datos = text.split(",")
     print("ID: %s\nText: %s" % (id,text))
     #Query
     query_insert = ("INSERT INTO rfid (nombre,texto,rfid) VALUES ('"+datos[0]+"','"+textoTag.texto+"',"+str (id)+");")
