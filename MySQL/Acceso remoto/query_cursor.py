@@ -2,10 +2,10 @@
 import mysql.connector
 
 #Conexión
-cnx = mysql.connector.connect(user='laloremoto', password='2907', host='192.168.100.131', database='detectorsintomas')
+cnx = mysql.connector.connect(user='laloremoto', password='2907', host='192.168.100.131', database='codigoIoT')
 
 #Query
-query = ("SELECT id,nombre,temp,bpm,sp02 FROM registro WHERE protodiagnostico='Signos vitales anormales, se le recomienda visitara a un médico';")
+query = ("SELECT * FROM rfid WHERE id=1;")
 
 #Petición
 cursor = cnx.cursor()
